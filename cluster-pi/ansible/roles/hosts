@@ -1,0 +1,7 @@
+[local]
+cluster-gw
+
+[cluster]
+rpi01
+rpi02
+rpi03

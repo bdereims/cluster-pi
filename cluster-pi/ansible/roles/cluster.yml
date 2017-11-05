@@ -1,0 +1,13 @@
+---
+- hosts: local 
+  become: yes
+  become_user: root
+  roles:
+    - users
+
+- hosts: cluster 
+  become: yes
+  become_user: root
+  roles:
+    - users
+    - docker 

@@ -1,0 +1,5 @@
+---
+- name: Install Docker 
+  script: docker/files/install-docker.sh
+  args:
+    creates: /etc/docker-installed 

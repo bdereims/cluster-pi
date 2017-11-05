@@ -1,0 +1,8 @@
+---
+- name: Update pi User
+  user:
+    name: pi 
+    password: '{{ pi_password }}'
+    groups: sudo
+    append: yes
+    shell: /bin/bash
