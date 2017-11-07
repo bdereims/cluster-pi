@@ -5,3 +5,10 @@ cluster-gw
 rpi01
 rpi02
 rpi03
+
+[master]
+rpi01
+
+[node]
+rpi02
+rpi03

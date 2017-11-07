@@ -1,0 +1,6 @@
+---
+- name: Update cmdline.txt
+  replace:
+    path: /boot/cmdline.txt
+    regexp: 'ext4 elevator'
+    replace: 'ext4 cgroup_enable=cpuset elevator'

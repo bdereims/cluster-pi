@@ -1,0 +1,6 @@
+---
+- name: Update fstab 
+  replace:
+    path: /etc/fstab
+    regexp: 'defaults,noatime'
+    replace: 'defaults,discard,noatime'

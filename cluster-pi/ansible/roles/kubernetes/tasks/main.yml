@@ -1,0 +1,5 @@
+---
+- name: Install Kubernetes 
+  script: kubernetes/files/install-kubernetes.sh
+  args:
+    creates: /etc/kubernetes-installed 
