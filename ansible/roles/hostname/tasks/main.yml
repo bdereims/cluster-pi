@@ -1,0 +1,4 @@
+---
+- name: Update Hostname
+  hostname:
+    name: '{{ set_hostname }}'

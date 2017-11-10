@@ -1,14 +1,14 @@
 [local]
-cluster-gw
+cluster-gw set_hostname=cluster-gw
 
 [cluster]
-rpi01
-rpi02
-rpi03
+rpi01 set_hostname=rpi01
+rpi02 set_hostname=rpi02
+rpi03 set_hostname=rpi03
 
 [master]
 rpi01
 
-[node]
+[worker]
 rpi02
 rpi03
