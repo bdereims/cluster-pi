@@ -6,6 +6,7 @@
   roles:
     - hostname
     - users
+    - docker
     - cmdline
     - discard
 
