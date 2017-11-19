@@ -1,0 +1,10 @@
+---
+- name: Update apt list 
+  replace:
+    path: /etc/apt/sources.list
+    regexp: '^deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi'
+    replace: '#deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi'
+- name: Add a repo
+  lineinfile:
+    path: /etc/apt/sources.list
+    line: 'deb http://raspbian.42.fr/raspbian/ stretch main contrib non-free rpi'

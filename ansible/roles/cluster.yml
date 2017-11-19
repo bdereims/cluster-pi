@@ -15,8 +15,10 @@
   become: yes
   become_user: root
   roles:
+    - hostname
     - users
     - docker 
     - cmdline
     - discard
     - kubernetes
+    - glusterfs

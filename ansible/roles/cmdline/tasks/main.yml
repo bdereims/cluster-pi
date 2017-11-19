@@ -3,4 +3,4 @@
   replace:
     path: /boot/cmdline.txt
     regexp: 'ext4 elevator'
-    replace: 'ext4 cgroup_enable=cpuset elevator'
+    replace: 'ext4 cgroup_enable=cpuset cgroup_memory=1 elevator'
